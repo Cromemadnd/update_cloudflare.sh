@@ -16,7 +16,7 @@ Built with Gemini 3 Flash.
 - **域名（用于验证）**：脚本会根据这个域名查找对应的DNS记录，来判断是否需要更新。
 - **自定义更新脚本**：选择`/usr/lib/ddns/update_cloudflare.sh`。
 - **域名**：需要更新的域名，格式为`name@domain.com`。
-- **用户名**：如果使用Token认证，填写`token`；如果使用Email+Key认证，填写Cloudflare账号的Email地址。
+- **用户名**：如果使用Token认证，填写`Bearer`；如果使用Email+Key认证，填写Cloudflare账号的Email地址。
 - **密码**：如果使用Token认证，填写Cloudflare API Token；如果使用Email+Key认证，填写Cloudflare API Key。
 - **可选参数**：使用逗号分隔的其他域名列表，如`my2host@example.com, my3host@example.com`。脚本会同时更新这些域名的DNS记录，格式同上。
 
